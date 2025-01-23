@@ -53,7 +53,7 @@
 
 * {
   font-family: 'CaskaydiaCove Nerd Font', monospace;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* Window */
@@ -113,12 +113,14 @@ window {
 /* Text */
 #text {
   margin: 5px;
+  margin-left: 10px;
   border: none;
   color: @text;
 }
 
 #entry {
   background-color: @base;
+  margin-bottom: 2px;
 }
 
 #entry arrow {
