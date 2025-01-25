@@ -2,7 +2,7 @@
 
 * {
   font-family: "Caskaydia Cove Nerd Font", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 window#waybar {
@@ -96,13 +96,15 @@ button:hover {
 #network,
 #bluetooth,
 #pulseaudio {
-  padding: 0 8px;
+  padding: 0 6px;
+}
+#custom-spotify {
+  padding: 0 4px;
 }
 
 #pulseaudio {
   color: @pink;
-  margin-left: 5px; 
-  margin-right: 5px;
+  margin-left: 2px; 
 }
 
 #custom-shutdown {
@@ -122,14 +124,14 @@ button:hover {
 #custom-logout {
   color: @red;
   font-size: 16px;
-  margin-left: 5px; 
+  margin-left: 2px; 
   margin-right: 5px;
 }
 
 #network {
   color: @green;
   margin-left: 5px; 
-  margin-right: 5px;
+  margin-right: 1px;
 
 }
 
@@ -139,26 +141,22 @@ button:hover {
 
 #cpu {
   color: @sky;
-  margin-left: 5px; 
-  margin-right: 5px;
+  margin-left: 2px; 
 }
 
 #memory {
 	color: @peach; 
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 2px;
 }
 
 #battery {
   color: @green;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
 
 }
 
 #clock {
   color: @teal;
-  margin-left: 5px; 
   margin-right: 5px;
 }
 
@@ -200,7 +198,7 @@ button:hover {
 
 .modules-center {
   padding: 0 10px;
-  margin-right: 90px;
+  margin-right: 185px;
 }
 #battery.charging,
 #battery.plugged {
@@ -234,4 +232,8 @@ label:focus {
 
 #pulseaudio.muted {
   color: @text;
+}
+.custom-spotify {
+  letter-spacing: -1px;
+  color: @green;
 }

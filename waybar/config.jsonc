@@ -16,21 +16,20 @@
     "cpu",
 		"memory",
 		"pulseaudio",
+    "custom/spotify",
  	  "clock",
     "custom/notifications",
 		"network",
     "custom/logout",
-    "custom/restart",
     "custom/shutdown", 
     ],
     "hyprland/window": {
       "format": "{}",
       "max-length": 25,
       "rewrite": {
-        "": "ArchLinux",
+        "": "Arch Linux",
         ".*Firefox.*": "Firefox",
 				".*Discord.*": "Discord",
-				"bash": "Terminal",
 				".*Code.*": "VSCode",
 	
       },
@@ -58,7 +57,7 @@
       },
       "sort-by-number": false,
       "persistent-workspaces": {
-        "*": 9, // 5 workspaces by default on every monitor
+        "*": 5, // 5 workspaces by default on every monitor
         "HDMI-A-1": 3 // but only three on HDMI-A-1
       },
     },
@@ -71,7 +70,7 @@
         "on-scroll-down": "playerctl previous"
     },
     "clock": {
-      "format": "{:%a %m-%d %I:%M %p}",
+      "format": "{:%I:%M %p}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
       "on-click" : "gnome-calendar"
     },
@@ -102,7 +101,7 @@
 			"on-click": "~/.config/waybar/scripts/network.sh",
     },
     "pulseaudio": {
-      "format": "{icon}  {volume}%",
+      "format": "{icon} {volume}%",
       "format-bluetooth": "{icon} {volume}%",
       "format-bluetooth-muted": "{icon} ",
       "format-muted": " {format_source}",
@@ -135,5 +134,13 @@
       "format": "{icon}",
       "format-icons": [""],
       "on-click": "~/.config/waybar/scripts/restart.sh"
+    },
+    "custom/spotify": {
+        "exec": "python ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+        "format": "{}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
     },
 }
