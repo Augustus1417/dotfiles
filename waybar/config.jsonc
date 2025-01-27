@@ -98,6 +98,7 @@
       "format-ethernet": "{cidr} ",
       "format-linked": "{ifname} (No IP) 󱚼",
       "format-disconnected": " 󱚼 ",
+      "tooltip-format": "Wifi",
 			"on-click": "~/.config/waybar/scripts/network.sh",
     },
     "pulseaudio": {
@@ -119,15 +120,18 @@
     "custom/shutdown": {
       "format": "{icon}",
       "format-icons": ["⏻"],
+      "tooltip-format": "Shutdown",
       "on-click": "~/.config/waybar/scripts/shutdown.sh"
     },
     "custom/notifications": {
       "format": "󰂚",
+      "tooltip-format": "Notifications",
       "on-click": "swaync-client -t -sw"
     },
     "custom/logout": {
       "format": "{icon}",
       "format-icons": ["󰗽"],
+      "tooltip-format": "Logout",
       "on-click": "~/.config/waybar/scripts/logout.sh"
     },
     "custom/restart": {
