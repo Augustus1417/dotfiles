@@ -1,13 +1,14 @@
-## Hyprland Catppuccin Rice
+# Hyprland Catppuccin Rice
 ---
-### Preview
+## Preview
 ![desktop](desktop.png)
 ![wofi](wofi.png)
 ![terminal](terminal.png)
 ![nvim](nvim.png)
 ---
-### Tools
-- Terminal: kitty
-- Code Editor: neovim
-- Status Bar: waybar
-- App Launcher: wofi
+## Tools
+- **Terminal**: kitty
+- **Code Editor**: neovim
+- **Status Bar**: waybar
+- **App Launcher**: wofi
+- **File Explorer**: superfile
