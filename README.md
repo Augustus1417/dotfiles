@@ -12,3 +12,4 @@
 - **Status Bar**: waybar
 - **App Launcher**: wofi
 - **File Explorer**: superfile
+- **Font**: CaskayadiaCove Nerd Font
